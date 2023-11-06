@@ -1,0 +1,126 @@
+html.interface-interface-skeleton__html-container {
+  font-size: 68%;
+}
+
+/* Main column width */
+.wp-block {
+  max-width: 900px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  max-width: 1200px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+
+.editor-post-title__block .editor-post-title__input {
+  font-family: $header-font;
+  color: $brand-primary;
+}
+
+.editor-styles-wrapper {
+  font-size: 62.5%; /* 1rem = 10px */
+  box-sizing: border-box;
+
+  > * {
+    font-family: $primary-font;
+    font-size: 2.1rem;
+  }
+
+  a {
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .acf-block-preview {
+    a {
+      pointer-events: none;
+      cursor: default;
+      color: $brand-primary;
+    }
+  }
+
+  .editor-block-list__layout a {
+    color: $brand-primary;
+    text-decoration: underline;
+  }
+
+  .wp-block {
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: $header-font;
+    }
+
+    h1 {
+      font-size: $h1-font-size-editor;
+      color: $h1-font-color;
+      font-weight: $h1-font-weight;
+    }
+
+    h2 {
+      font-size: $h2-font-size-editor;
+      color: $h2-font-color;
+      font-weight: $h2-font-weight;
+    }
+
+    h3 {
+      font-size: $h3-font-size-editor;
+      color: $h3-font-color;
+      font-weight: $h3-font-weight;
+    }
+
+    h4 {
+      font-size: $h4-font-size-editor;
+      color: $h4-font-color;
+      font-weight: $h4-font-weight;
+    }
+
+    h5 {
+      font-size: $h5-font-size-editor;
+      color: $h5-font-color;
+      font-weight: $h5-font-weight;
+    }
+  }
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+.feature-img img {
+  width: 100%;
+}
+
+.intro {
+  font-weight: bold;
+  color: $brand-primary;
+}
+
+/* Gravity Form correctie ------------------------------------ */
+
+.gform_wrapper .gform_body {
+  font-size: 1em;
+}
+
+/* Block list correctie ------------------------------------ */
+
+.block-library-list ul,
+.block-library-list ol {
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.25em;
+}
+
+.wp-block-button__link {
+  font-size: 0.9em;
+}

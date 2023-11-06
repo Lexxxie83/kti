@@ -1,0 +1,135 @@
+/* Button block WP
+--------------------------------------------- */
+
+/* stylelint-disable no-descending-specificity */
+
+.wp-block-button__link,
+.wp-block-button__link:not(.has-background),
+.search-form-header .search-submit,
+.search-form .search-submit,
+.wp-block-file .wp-block-file__button,
+.gform_wrapper .gform_footer input.button,
+.gform_wrapper .gform_footer input[type="submit"],
+.gform_previous_button,
+.gform_next_button,
+.button.gform_button {
+  position: relative;
+  padding: 0.6em 1em;
+  border: 2px solid $brand-primary;
+  background: radial-gradient(circle, #eb5c2b 0%, #ff7900 99.91%);
+  border-radius: 2px;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 1em 0;
+  margin-right: 30px;
+  text-decoration: none;
+  color: #fff !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    width: 30px;
+    top: -2px;
+    height: calc(100% + 4px);
+    background-color: $brand-primary;
+    background-image: url("../images/wit-pijltje-knop.svg");
+    background-position: 1px 2px;
+    background-repeat: no-repeat;
+    transition-duration: 0.2s;
+  }
+
+  &:hover {
+    background: radial-gradient(circle, #ff7900 99.91%, #eb5c2b 0%,);
+  }
+
+  &:hover::after {
+    background-position: 5px 2px;
+  }
+
+  &:not(.has-text-color) {
+    color: white;
+  }
+
+  .is-style-outline & {
+    background: #fff;
+    color: $brand-secondary !important;
+    transition-duration: 0.2s;
+    font-weight: 600;
+    font-size: 18px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 100%;
+      width: 0;
+      top: -2px;
+      height: 0;
+      border-top: 23px solid transparent;
+      border-left: 25px solid $brand-primary;
+      border-bottom: 21px solid transparent;
+    }
+
+    &::after {
+      content: "";
+      background-image: none;
+      position: absolute;
+      left: 100%;
+      width: 0;
+      top: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-left: 22px solid #fff;
+      border-bottom: 19px solid transparent;
+      background-color: transparent;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      padding-right: 22px;
+    }
+  }
+}
+
+.wp-block-file .wp-block-file__button {
+  margin-left: 15px;
+  font-size: 19px;
+}
+// Automatisch invullen van de achtergrondkleur gebaseerd op het thema
+// moet in het bovenstaande blok worden geplaatst
+// &:not(.has-background) {
+//   $default: nth(nth($colors, 1), 2); // first color in $colors array
+
+//   background-color: $default;
+
+//   &:hover,
+//   &:focus {
+//     background-color: darken($default, 10%);
+//   }
+//}
+
+// @each $name, $color in $colors {
+//   &.has-#{$name}-color:hover,
+//   &.has-#{$name}-color:focus {
+//     color: $color;
+//   }
+
+//   &.has-#{$name}-background-color:hover,
+//   &.has-#{$name}-background-color:focus {
+//     background-color: darken($color, 10%);
+//   }
+// }
+
+button.search-header-icon {
+  background: none;
+  margin: 0;
+  height: 40px;
+  padding: 0 25px 0 0;
+
+  &:active {
+    color: $blue;
+  }
+}

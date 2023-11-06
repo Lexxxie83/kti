@@ -1,0 +1,76 @@
+.producten .wp-block-group.outer-group {
+  background-color: $wit;
+
+  .wp-block-group__inner-container {
+    grid-template-columns: 1fr;
+    grid-column-gap: 30px;
+  }
+
+  .inner-group-social {
+    background-color: $licht-grijs;
+    position: relative;
+    grid-row: 2;
+  }
+
+  .slick-arrow {
+    opacity: 0;
+  }
+
+  .wp-block-indrukwekkend-product-slider__icons {
+    .slick-nav {
+      margin-top: 0;
+
+      .slick-slide {
+        display: flex;
+        align-content: center;
+        height: 104px;
+        justify-content: center;
+        flex-flow: column;
+      }
+    }
+  }
+
+  .wp-block-table {
+    table {
+      font-size: 1.6rem;
+      text-align: left;
+      border-collapse: collapse;
+      margin-top: 15px;
+
+      td {
+        border: 1px solid #aaa;
+        padding: 3px 4px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .producten .wp-block-group.outer-group {
+    .wp-block-group__inner-container {
+      grid-template-columns: 4fr 3fr;
+      grid-column-gap: 30px;
+    }
+
+    .inner-group-social {
+      background-color: $licht-grijs;
+      position: relative;
+      grid-row: inherit;
+
+      .wp-block-group__inner-container {
+        position: sticky;
+        top: 140px;
+      }
+    }
+
+    .wp-block-table {
+      table {
+        font-size: 1.8rem;
+      }
+    }
+
+    .slick-arrow {
+      opacity: 1;
+    }
+  }
+}

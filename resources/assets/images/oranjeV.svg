@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="199px" height="269px" viewBox="0 0 199 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Oranje V</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="50%" fx="0%" fy="50%" r="42.9952756%" gradientTransform="translate(0.000000,0.500000),scale(1.000000,0.740185),translate(-0.000000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#F5B304" offset="0%"></stop>
+            <stop stop-color="#FF7900" offset="99.9076225%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Oranje-V" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M100.097778,5.68434189e-14 L10.993542,101.010937 C4.3298546,108.689143 0,120.602335 0,130.97019 C0,143.651643 3.53232711,155.160873 13.3435309,165.541949 L112.258971,268.851794 L199,268.851794 L80.8587128,153.252706 C72.2298472,144.793018 67.13184,138.648396 67.13184,130.203398 C67.13184,122.13592 72.2298472,115.989829 77.7273526,110.610531 L184.87216,5.68434189e-14 L100.097778,5.68434189e-14 Z" id="Clip-2" fill="url(#radialGradient-1)"></path>
+    </g>
+</svg>

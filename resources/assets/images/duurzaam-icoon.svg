@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="142px" viewBox="0 0 124 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>KTI Duurzaam icoon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="80.1474226%" fx="50%" fy="80.1474226%" r="54.763677%" gradientTransform="translate(0.500000,0.801474),scale(1.000000,0.866011),rotate(180.000000),translate(-0.500000,-0.801474)" id="radialGradient-1">
+            <stop stop-color="#F5B304" offset="0%"></stop>
+            <stop stop-color="#FF7900" offset="99.9076225%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="KTI-Duurzaam-icoon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <polygon id="Path" fill="#FFFFFF" points="3.65 37.25 3.65 104.48 61.87 138.09 120.09 104.48 120.09 37.25 61.87 3.64"></polygon>
+            <polygon id="Path" fill="url(#radialGradient-1)" points="9.9 40.87 9.9 100.87 61.87 130.87 113.83 100.87 113.83 40.87 61.87 10.86"></polygon>
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="4.19" fill="#4CB134" cx="61.87" cy="67.81" r="37.84"></circle>
+            <path d="M83.18,124.06 C77.1306795,124.056348 72.0888086,119.427033 71.57,113.4 L70.49,95 C70.1610045,91.2128231 72.0563552,87.5781177 75.35,85.68 L78.09,84.1 C81.8909856,81.9102702 84.2324188,77.8566163 84.2300178,73.47 L84.2300178,69.58 C84.2380922,64.3967881 81.4826024,59.6023119 76.9999957,57 L61.87,48.3 L46.75,57 C42.2597015,59.5972375 39.4960389,64.3926685 39.4999957,69.58 L39.4999957,73.51 C39.4975812,77.8966163 41.8390144,81.9502702 45.64,84.14 L48.38,85.72 C51.6597631,87.6117876 53.552918,91.2267006 53.24,95 L52.16,113.4 C51.6411914,119.427033 46.5993205,124.056348 40.55,124.06 L61.87,135.48 L83.18,124.06 Z" id="Path" fill="#FFFFFF"></path>
+            <polygon id="Path" fill="#4CB134" points="71.71 71.87 72.88 52.9 61.87 47.22 50.85 52.9 52.02 71.87 61.87 77.55"></polygon>
+            <path d="M61.87,141.73 L0.49,106.3 L0.49,35.43 L61.87,0 L123.24,35.43 L123.24,106.3 L61.87,141.73 Z M5.87,103.22 L61.87,135.56 L117.87,103.22 L117.87,38.52 L61.87,6.17 L5.87,38.52 L5.87,103.22 Z" id="Shape" fill="#414953"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,398 @@
+@import url(https://use.typekit.net/dlj4hhh.css);@import url(https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300;
+
+600&display=swap);.has-achtergrond-blauw-color {
+  color: #dbe6ef;
+}
+
+/* line 42, resources/assets/styles/common/_variables.scss */
+
+.has-achtergrond-blauw-background-color {
+  background-color: #dbe6ef;
+}
+
+/* line 38, resources/assets/styles/common/_variables.scss */
+
+.has-donker-grijs-color {
+  color: #404853;
+}
+
+/* line 42, resources/assets/styles/common/_variables.scss */
+
+.has-donker-grijs-background-color {
+  background-color: #404853;
+}
+
+/* line 38, resources/assets/styles/common/_variables.scss */
+
+.has-oranje-color {
+  color: #ff7900;
+}
+
+/* line 42, resources/assets/styles/common/_variables.scss */
+
+.has-oranje-background-color {
+  background-color: #ff7900;
+}
+
+/* line 38, resources/assets/styles/common/_variables.scss */
+
+.has-licht-grijs-color {
+  color: #f1efed;
+}
+
+/* line 42, resources/assets/styles/common/_variables.scss */
+
+.has-licht-grijs-background-color {
+  background-color: #f1efed;
+}
+
+/* line 38, resources/assets/styles/common/_variables.scss */
+
+.has-blauw-color {
+  color: #005c9e;
+}
+
+/* line 42, resources/assets/styles/common/_variables.scss */
+
+.has-blauw-background-color {
+  background-color: #005c9e;
+}
+
+/* line 38, resources/assets/styles/common/_variables.scss */
+
+.has-grijs-color {
+  color: #696969;
+}
+
+/* line 42, resources/assets/styles/common/_variables.scss */
+
+.has-grijs-background-color {
+  background-color: #696969;
+}
+
+/* line 38, resources/assets/styles/common/_variables.scss */
+
+.has-rood-color {
+  color: #d50032;
+}
+
+/* line 42, resources/assets/styles/common/_variables.scss */
+
+.has-rood-background-color {
+  background-color: #d50032;
+}
+
+/* line 38, resources/assets/styles/common/_variables.scss */
+
+.has-zwart-color {
+  color: #535353;
+}
+
+/* line 42, resources/assets/styles/common/_variables.scss */
+
+.has-zwart-background-color {
+  background-color: #535353;
+}
+
+/* line 38, resources/assets/styles/common/_variables.scss */
+
+.has-wit-color {
+  color: #fff;
+}
+
+/* line 42, resources/assets/styles/common/_variables.scss */
+
+.has-wit-background-color {
+  background-color: #fff;
+}
+
+/* line 59, resources/assets/styles/common/_variables.scss */
+
+.has-small-font-size {
+  font-size: 13px;
+}
+
+/* line 59, resources/assets/styles/common/_variables.scss */
+
+.has-normal-font-size {
+  font-size: 21px;
+}
+
+/* line 59, resources/assets/styles/common/_variables.scss */
+
+.has-medium-font-size {
+  font-size: 26px;
+}
+
+/* line 59, resources/assets/styles/common/_variables.scss */
+
+.has-large-font-size {
+  font-size: 31px;
+}
+
+/* line 59, resources/assets/styles/common/_variables.scss */
+
+.has-larger-font-size {
+  font-size: 36px;
+}
+
+/* line 59, resources/assets/styles/common/_variables.scss */
+
+.has-huge-font-size {
+  font-size: 42px;
+}
+
+/** Import theme styles */
+
+/* line 1, resources/assets/styles/style-editor/_global.scss */
+
+html.interface-interface-skeleton__html-container {
+  font-size: 68%;
+}
+
+/* Main column width */
+
+/* line 6, resources/assets/styles/style-editor/_global.scss */
+
+.wp-block {
+  max-width: 900px;
+}
+
+/* Width of "wide" blocks */
+
+/* line 11, resources/assets/styles/style-editor/_global.scss */
+
+.wp-block[data-align="wide"] {
+  max-width: 1200px;
+}
+
+/* Width of "full-wide" blocks */
+
+/* line 16, resources/assets/styles/style-editor/_global.scss */
+
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+
+/* line 20, resources/assets/styles/style-editor/_global.scss */
+
+.editor-post-title__block .editor-post-title__input {
+  font-family: magistral, Arial, Helvetica, sans-serif;
+  color: #ff7900;
+}
+
+/* line 25, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 29, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper > * {
+  font-family: "Mukta Vaani", Arial, Helvetica, sans-serif;
+  font-size: 2.1rem;
+}
+
+/* line 35, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper a:focus,
+.editor-styles-wrapper a:hover {
+  text-decoration: none;
+}
+
+/* line 42, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper .acf-block-preview a {
+  pointer-events: none;
+  cursor: default;
+  color: #ff7900;
+}
+
+/* line 49, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper .editor-block-list__layout a {
+  color: #ff7900;
+  text-decoration: underline;
+}
+
+/* line 55, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper .wp-block h1,
+.editor-styles-wrapper .wp-block h2,
+.editor-styles-wrapper .wp-block h3,
+.editor-styles-wrapper .wp-block h4 {
+  font-family: magistral, Arial, Helvetica, sans-serif;
+}
+
+/* line 62, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper .wp-block h1 {
+  font-size: 5.46rem;
+  color: #ff7900;
+  font-weight: 900;
+}
+
+/* line 68, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper .wp-block h2 {
+  font-size: 3.57rem;
+  color: #404853;
+  font-weight: 700;
+}
+
+/* line 74, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper .wp-block h3 {
+  font-size: 2.52rem;
+  color: #404853;
+  font-weight: 700;
+}
+
+/* line 80, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper .wp-block h4 {
+  font-size: 2.31rem;
+  color: #404853;
+  font-weight: 700;
+}
+
+/* line 86, resources/assets/styles/style-editor/_global.scss */
+
+.editor-styles-wrapper .wp-block h5 {
+  font-size: 2.1rem;
+  color: #535353;
+  font-weight: 700;
+}
+
+/* line 94, resources/assets/styles/style-editor/_global.scss */
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 100, resources/assets/styles/style-editor/_global.scss */
+
+.feature-img img {
+  width: 100%;
+}
+
+/* line 104, resources/assets/styles/style-editor/_global.scss */
+
+.intro {
+  font-weight: bold;
+  color: #ff7900;
+}
+
+/* Gravity Form correctie ------------------------------------ */
+
+/* line 111, resources/assets/styles/style-editor/_global.scss */
+
+.gform_wrapper .gform_body {
+  font-size: 1em;
+}
+
+/* Block list correctie ------------------------------------ */
+
+/* line 117, resources/assets/styles/style-editor/_global.scss */
+
+.block-library-list ul,
+.block-library-list ol {
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.25em;
+}
+
+/* line 124, resources/assets/styles/style-editor/_global.scss */
+
+.wp-block-button__link {
+  font-size: 0.9em;
+}
+
+/* Lists ------------------------------------- */
+
+/* line 5, resources/assets/styles/style-editor/_lists.scss */
+
+.block-editor-block-list__layout ul,
+.editor-styles-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2rem;
+  margin-left: 0;
+}
+
+/* line 11, resources/assets/styles/style-editor/_lists.scss */
+
+.block-editor-block-list__layout ul li,
+.editor-styles-wrapper ul li {
+  margin-left: 0;
+  padding-left: 1.7em;
+}
+
+/* line 15, resources/assets/styles/style-editor/_lists.scss */
+
+.block-editor-block-list__layout ul li::before,
+.editor-styles-wrapper ul li::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  margin: 0 1em -0.05em -1.7em;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 100%;
+  border: solid 1px transparent;
+  background: #ff7900;
+}
+
+/* Quotes ------------------------------------ */
+
+/* line 3, resources/assets/styles/components/_quotes.scss */
+
+blockquote {
+  border-color: #ff7900;
+  border-style: solid;
+  border-width: 0 0 0 0.2rem;
+  color: #404853;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.1rem;
+  margin: 4rem 0;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+
+/* line 15, resources/assets/styles/components/_quotes.scss */
+
+cite {
+  color: #6d6d6d;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* line 23, resources/assets/styles/components/_quotes.scss */
+
+blockquote cite {
+  display: block;
+  margin: 2rem 0 0 0;
+}
+
+/* line 28, resources/assets/styles/components/_quotes.scss */
+
+blockquote p:last-child {
+  margin: 0;
+}
+
+/* line 16, stdin */
+
+.form_editor_fields_container label img {
+  max-width: 150px;
+}
+
+
+/*# sourceMappingURL=style-editor.css.map*/

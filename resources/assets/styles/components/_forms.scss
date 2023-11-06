@@ -1,0 +1,448 @@
+/** Search form */
+// TODO: .search-form {}
+// TODO: .search-form label {}
+// TODO: .search-form .search-field {}
+// TODO: .search-form .search-submit {}
+
+/* Inputs ------------------------------------ */
+
+.formulier {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 80%;
+}
+
+.gform_wrapper {
+  background: #fff;
+
+  .gform_heading {
+    h3 {
+      color: $brand-primary;
+      font-size: 3.2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .gform_body {
+    font-size: 0.9em;
+
+    .gfield_html {
+      margin-bottom: 6rem;
+      font-weight: 300;
+      line-height: 3rem !important;
+      grid-column: 1/-1;
+      display: block;
+    }
+
+    ul {
+      li {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    ul.gfield_radio {
+      li {
+        input[type="radio"] {
+          width: auto !important;
+          max-width: 20px;
+        }
+      }
+    }
+  }
+}
+
+fieldset {
+  border: 0.2rem solid #dcd7ca;
+  padding: 2rem;
+}
+
+legend,
+.gform_wrapper legend.gfield_label {
+  font-size: 0.85em;
+  font-weight: 300;
+  padding: 0 1rem;
+}
+
+label,
+.gform_wrapper .top_label .gfield_label {
+  display: block;
+  margin: 0;
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: inherit;
+}
+
+.gform_wrapper .warmtepomp {
+  .top_label .gfield_label {
+    font-weight: 600;
+    margin-top: 1em;
+  }
+
+  .calculaties {
+    border: 1px solid #ccc;
+    padding: 14px 30px;
+    margin: 15px 0;
+    background: #ffeddd;
+
+    .totaal {
+      font-weight: bold;
+    }
+  }
+
+  .vervolg {
+    border: 1px solid #ccc;
+    padding: 14px 30px;
+    margin: 15px 0;
+    background: #ffeddd;
+
+    ol {
+      li {
+        display: list-item !important;
+      }
+    }
+  }
+
+  .toelichtingen {
+    font-size: 0.8em;
+  }
+
+  .success {
+    font-weight: bold;
+
+    &::before {
+      content: "";
+      background-image: url("../images/oranjeV.svg");
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      font-size: 0;
+    }
+  }
+
+  small {
+    font-size: 0.8em;
+    display: block;
+  }
+}
+
+label.gfield_label {
+  &::after {
+    // content: ":";
+  }
+}
+
+label.inline,
+input[type="checkbox"] + label,
+.gform_wrapper ul.gfield_radio li label,
+.gform_wrapper ul.gfield_checkbox li label {
+  display: inline;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+input,
+textarea,
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file__button {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1;
+}
+
+@supports ( font-variation-settings: normal ) {
+  input,
+  textarea,
+  button,
+  .button,
+  .faux-button,
+  .faux-button.more-link,
+  .wp-block-button__link,
+  .wp-block-file__button {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  }
+}
+
+input,
+textarea {
+  border-color: #dcd7ca;
+  color: #000;
+}
+
+code,
+input[type="url"],
+input[type="email"],
+input[type="tel"] {
+  /* rtl:ignore */
+  direction: ltr;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0.1rem;
+  box-shadow: none;
+  display: block;
+  font-size: 1.6rem;
+  letter-spacing: -0.015em;
+  margin: 0;
+  max-width: 100%;
+  padding: 1.5rem 1.8rem;
+  width: 100%;
+}
+
+select,
+.gform_wrapper select {
+  font-size: 0.9em;
+}
+
+textarea {
+  height: 12rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+input::-moz-placeholder {
+  line-height: normal;
+}
+
+input:-ms-input-placeholder {
+  line-height: normal;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.gform_wrapper li.gfield.gfield_error,
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+  background-color: transparent;
+  margin-bottom: 6px !important;
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+/* stylelint-disable no-descending-specificity */
+.gform_wrapper .warmtepomp .gform_body {
+  .installatie img {
+    width: 300px;
+  }
+
+  ul {
+    li {
+      display: block;
+
+      &::before {
+        display: none;
+      }
+
+      // TODO, gtc voor pagina 2 met afbeeldingen van de pompen
+      &.afbeelding {
+        ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          // grid-gap: 100px;
+
+          li {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+
+            input {
+              grid-row: 2;
+            }
+
+            label {
+              text-align: center;
+            }
+          }
+        }
+
+        &.twee {
+          ul {
+            // afbeeldingen van de warmtepompen (2)
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 100px;
+          }
+
+          &.text {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 100px;
+
+            h3 {
+              //
+              text-align: center;
+              margin-bottom: 10px;
+            }
+
+            .prijs {
+              font-size: 3.4rem;
+              color: $brand-primary;
+              margin-bottom: 5px;
+              font-weight: bold;
+              text-align: center;
+              display: block;
+            }
+
+            .korting {
+              font-size: 2rem;
+              color: $light-blue;
+              margin-bottom: 5px;
+              font-weight: bold;
+              text-align: center;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wp-admin .gfield_radio img {
+  max-width: 30%;
+}
+
+@media only screen and (min-width: 641px) {
+  .gform_wrapper .gform_body {
+    font-size: 0.9em;
+
+    ul {
+      li {
+        // display: grid;
+        // grid-template-columns: 1fr 2fr;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .gform_wrapper .warmtepomp .gform_body {
+    ul {
+      li {
+        // display: block;
+        &::before {
+          display: none;
+        }
+
+        // TODO, gtc voor pagina 2 met afbeeldingen van de pompen
+        &.afbeelding {
+          ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            // grid-gap: 100px;
+
+            li {
+              // display: grid;
+
+              input {
+                // grid-row: 2;
+              }
+
+              label {
+                // text-align: center;
+              }
+            }
+          }
+
+          &.twee {
+            ul {
+              // afbeeldingen van de warmtepompen (2)
+            }
+
+            &.text {
+              // display: grid;
+
+              h3 {
+                //
+              }
+
+              .prijs {
+                // font-size: 3.4rem;
+              }
+
+              .korting {
+                //test
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//verborgen zoek formulier boven de pagina
+#search {
+  position: fixed;
+  //top en height gelijk houden:
+  top: -135px;
+  height: 135px;
+  width: 100%;
+  z-index: 99999;
+  background: hsla(0, 0%, 100%, 0.93);
+  transition: top 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    top: 0;
+  }
+
+  form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+
+    .search-submit {
+      margin: 8px 0 0;
+    }
+  }
+
+  #search-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .search-form .search-field {
+    width: 300px;
+  }
+}

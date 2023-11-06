@@ -1,0 +1,19 @@
+.wp-block-indrukwekkend-header-home,
+.wp-block-indrukwekkend-header-landing {
+  margin-top: 0;
+
+  .afbeelding-container {
+    margin-top: 0;
+  }
+
+  .link-balk__content ul li {
+    a {
+      margin-left: 10px;
+    }
+
+    &::before {
+      margin-top: 5px;
+      align-self: start;
+    }
+  }
+}

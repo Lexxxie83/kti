@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-04 10:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: resources/functions.php:17
+msgid "Sage &rsaquo; Error"
+msgstr ""
+
+#: resources/functions.php:27
+msgid "You must be using PHP 7.1 or greater."
+msgstr ""
+
+#: resources/functions.php:27
+msgid "Invalid PHP version"
+msgstr ""
+
+#: resources/functions.php:34
+msgid "You must be using WordPress 4.7.0 or greater."
+msgstr ""
+
+#: resources/functions.php:34
+msgid "Invalid WordPress version"
+msgstr ""
+
+#: resources/functions.php:43
+msgid "You must run <code>composer install</code> from the Sage directory."
+msgstr ""
+
+#: resources/functions.php:44
+msgid "Autoloader not found."
+msgstr ""
+
+#: resources/functions.php:59
+#, php-format
+msgid "Error locating <code>%s</code> for inclusion."
+msgstr ""
+
+#: resources/views/search.blade.php:18 resources/views/search.blade.php:18
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: resources/views/search.blade.php:19
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: app/filters.php:33
+msgid "Continued"
+msgstr ""
+
+#: app/colorscheme.php:6
+msgid "Oranje"
+msgstr ""
+
+#: app/colorscheme.php:11
+msgid "Groen"
+msgstr ""
+
+#: app/colorscheme.php:16
+msgid "Donker Grijs"
+msgstr ""
+
+#: app/colorscheme.php:21
+msgid "Grijs"
+msgstr ""
+
+#: app/colorscheme.php:26
+msgid "Licht Grijs"
+msgstr ""
+
+#: app/colorscheme.php:31
+msgid "Wit"
+msgstr ""
+
+#: app/colorscheme.php:44
+msgid "small"
+msgstr ""
+
+#: app/colorscheme.php:45
+msgid "S"
+msgstr ""
+
+#: app/colorscheme.php:50
+msgid "regular"
+msgstr ""
+
+#: app/colorscheme.php:51
+msgid "M"
+msgstr ""
+
+#: app/colorscheme.php:56
+msgid "large"
+msgstr ""
+
+#: app/colorscheme.php:57
+msgid "L"
+msgstr ""
+
+#: app/colorscheme.php:62
+msgid "larger"
+msgstr ""
+
+#: app/colorscheme.php:63
+msgid "XL"
+msgstr ""
+
+#: app/setup.php:47
+msgid "Primary Navigation"
+msgstr ""
+
+#: app/setup.php:48
+msgid "Top Navigation"
+msgstr ""
+
+#: app/setup.php:49
+msgid "Mobiele Navigation"
+msgstr ""
+
+#: app/setup.php:50
+msgid "Footer links Navigation"
+msgstr ""
+
+#: app/setup.php:51
+msgid "Footer 2 Navigation"
+msgstr ""
+
+#: app/setup.php:52
+msgid "Footer 3 Navigation"
+msgstr ""
+
+#: app/setup.php:53
+msgid "Footer rechts Navigation"
+msgstr ""
+
+#: app/setup.php:106
+msgid "Primary"
+msgstr ""
+
+#: app/setup.php:110 app/setup.php:198 app/setup.php:199
+msgid "Footer"
+msgstr ""
+
+#: app/setup.php:177
+msgid "Options"
+msgstr ""
+
+#: app/setup.php:182 app/setup.php:183
+msgid "General"
+msgstr ""
+
+#: app/setup.php:190 app/setup.php:191
+msgid "Header"
+msgstr ""
+
+#: app/Controllers/App.php:27
+msgid "Laatste nieuws"
+msgstr ""
+
+#: app/Controllers/App.php:33
+#, php-format
+msgid "Zoek resultaten voor \"%s\""
+msgstr ""
+
+#: app/Controllers/App.php:36
+msgid "Niet gevonden"
+msgstr ""
+
+#: resources/views/index.blade.php:8 resources/views/front-page.blade.php:8
+msgid "Sorry, no results were found."
+msgstr ""
+
+#: resources/views/404.blade.php:8
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr ""
+
+#: resources/views/search.blade.php:11
+msgid "Sorry, er werden geen resultaten gevonden."
+msgstr ""
+
+#: resources/views/partials/comments.blade.php:21
+msgid "&larr; Older comments"
+msgstr ""
+
+#: resources/views/partials/comments.blade.php:24
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: resources/views/partials/comments.blade.php:33
+msgid "Comments are closed."
+msgstr ""
+
+#: resources/views/partials/content-page.blade.php:3
+#: resources/views/partials/content-single.blade.php:25
+msgid "Pages:"
+msgstr ""
+
+#: resources/views/partials/entry-meta.blade.php:3
+msgid "By"
+msgstr ""

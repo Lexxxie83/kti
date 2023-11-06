@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>WTW unit</title>
+    <desc>Created with Sketch.</desc>
+    <g id="WTW-unit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconen-KTI_WtW-installatie" transform="translate(32.000000, 23.000000)">
+            <line x1="47.63" y1="10.6" x2="28.5" y2="10.045" id="Path" stroke="#222221" stroke-width="2" stroke-linejoin="round" fill-rule="nonzero"></line>
+            <line x1="8" y1="23" x2="1" y2="30.7225" id="Path-Copy" stroke="#222221" stroke-width="2" stroke-linejoin="round" fill-rule="nonzero"></line>
+            <polyline id="Path" stroke="#222221" stroke-width="1.95" stroke-linejoin="round" fill-rule="nonzero" points="25.21 95.67 25.21 36.6 47.63 10.6 75.55 10.45 75.55 26.45"></polyline>
+            <polygon id="Path" stroke="#222221" stroke-width="2" stroke-linejoin="round" fill-rule="nonzero" points="25.21 95.67 0.52 84.94 0.52 31.09 25.21 36.6"></polygon>
+            <path d="M18.08,1.29 L30.2,11.39 C33.6,14.39 30.81,21.18 27.37,24.62 C23.44,28.55 17.62,31.48 14.71,28.9 L2.59,18.8" id="Path" stroke="#222221" stroke-width="2" fill-rule="nonzero"></path>
+            <path d="M2.59,18.8 C-0.82,15.8 3.86,9.52 6.44,6.6 C9.02,3.68 15.16,-1.29 18.08,1.29 C21.48,4.29 16.8,10.57 14.22,13.49 C11.64,16.41 5.5,21.38 2.59,18.8" id="Path" stroke="#222221" stroke-width="2"></path>
+            <polygon id="Path" stroke="#222221" stroke-width="2.08" stroke-linejoin="round" points="49.25 25.59 66.41 23.41 74.84 25.63 57.37 27.81 48.32 43.585 58.02 63.76 49.6 61.55 39.9 41.09"></polygon>
+            <path d="M48.32,43.31 L57.68,27.81 L74.84,25.63 L81.94,41.06 C81.94,41.06 75.18,59.26 74.66,59.78 C74.14,60.3 58.02,63.78 58.02,63.78 L48.32,43.31 Z" id="Path" stroke="#222221" stroke-width="2.08" stroke-linejoin="round" fill-rule="nonzero"></path>
+            <path d="M63.53,27.09 C64.5545102,32.2247759 65.3188187,37.4080558 65.82,42.62 C66.52,50.42 64.44,62.38 64.44,62.38 L69.29,61 C70.3269629,54.8743541 70.732421,48.6584466 70.5,42.45 C70.1978521,37.0595288 69.4249081,31.7058039 68.19,26.45 L63.53,27.09 Z" id="Path" stroke="#222221" stroke-width="2.03" stroke-linejoin="round" fill-rule="nonzero"></path>
+            <line x1="49.25" y1="25.59" x2="57.68" y2="27.81" id="Path" stroke="#222221" stroke-width="2.08" stroke-linecap="round" stroke-linejoin="round"></line>
+            <polyline id="Path-2" stroke="#000000" stroke-width="2" stroke-linecap="round" points="25.21 95.67 75.21 83.4130859 75.21 59.2714844"></polyline>
+        </g>
+    </g>
+</svg>

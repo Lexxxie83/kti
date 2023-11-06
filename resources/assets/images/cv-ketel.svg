@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>CV ketel</title>
+    <desc>Created with Sketch.</desc>
+    <g id="CV-ketel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M74.88,13.4515226 L74.88,29 L70.9980469,29 L51.51,29 L51.51,13.4515226 C51.51,10.4322716 59.3,10 63.2,10 C67.1,10 74.88,10.8312916 74.88,13.4515226 Z" id="Path" stroke="#222221" stroke-width="2"></path>
+        <path d="M88.93,114.81 L88.93,126.27 L81.14,126.27 L81.14,114.81 C81.14,114.81 88.93,114.81 88.93,114.81 Z" id="Path" stroke="#222221" stroke-width="2" fill-rule="nonzero" transform="translate(85.035000, 120.540000) rotate(180.000000) translate(-85.035000, -120.540000) "></path>
+        <path d="M67.79,115 L67.79,121 L60,121 L60,115 C60,115 67.79,115 67.79,115 Z" id="Path-Copy" stroke="#222221" stroke-width="2" fill-rule="nonzero" transform="translate(63.895000, 118.000000) rotate(180.000000) translate(-63.895000, -118.000000) "></path>
+        <rect id="Rectangle" stroke="#222221" stroke-width="2" stroke-linejoin="round" fill-rule="nonzero" x="47.61" y="29.58" width="62.99" height="85.06"></rect>
+        <polygon id="Path" stroke="#222221" stroke-width="2" stroke-linejoin="round" fill-rule="nonzero" points="47.61 114.64 33.98 108.97 33.98 35.25 47.61 29.58"></polygon>
+        <rect id="Rectangle" stroke="#222221" stroke-width="2" fill-rule="nonzero" x="59.95" y="86.72" width="38.31" height="16.23"></rect>
+        <rect id="Rectangle" stroke="#222221" stroke-width="2" fill-rule="nonzero" x="78.72" y="126.27" width="12.81" height="7.79"></rect>
+        <rect id="Rectangle" stroke="#222221" stroke-width="2" fill-rule="nonzero" x="56.69" y="121.08" width="12.81" height="7.79"></rect>
+    </g>
+</svg>

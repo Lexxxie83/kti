@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="144px" viewBox="0 0 144 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Warmtepomp</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Warmtepomp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconen-KTI_Warmtepomp" transform="translate(22.000000, 28.000000)" fill-rule="nonzero" stroke="#222221" stroke-linejoin="round">
+            <polygon id="Path" stroke-width="2" points="42.84 87.9980469 42.84 81.9227742 55.66 78.9980469 55.66 84.3022843"></polygon>
+            <polygon id="Path-Copy" stroke-width="2" points="77 78.17 77 74.2255469 89.82 71 89.82 74.0147677"></polygon>
+            <polygon id="Path" stroke-width="1.95" points="100.2 67.95 27.9 85.33 27.9 0.27 100.2 0.27"></polygon>
+            <polygon id="Path" stroke-width="2" points="27.9 85.33 0.22 75.93 0.22 0.27 27.9 0.27"></polygon>
+            <ellipse id="Oval" stroke-width="2" cx="55.42" cy="34.7" rx="19.29" ry="24.61"></ellipse>
+            <ellipse id="Oval" stroke-width="2.03" cx="55.41" cy="34.82" rx="8.35" ry="10.65"></ellipse>
+            <line x1="60.07" y1="26.72" x2="68.64" y2="16.56" id="Path" stroke-width="2" fill="#FFFFFF"></line>
+            <line x1="61.4" y1="42.01" x2="69.38" y2="51.32" id="Path" stroke-width="2" fill="#FFFFFF"></line>
+            <line x1="51.78" y1="44.65" x2="46.11" y2="55.98" id="Path" stroke-width="2" fill="#FFFFFF"></line>
+            <line x1="47.07" y1="34.67" x2="36.13" y2="34.7" id="Path" stroke-width="2" fill="#FFFFFF"></line>
+            <line x1="52.52" y1="24.62" x2="46.41" y2="12.4" id="Path" stroke-width="2" fill="#FFFFFF"></line>
+        </g>
+        <line x1="65" y1="116" x2="56" y2="112" id="Path-4" stroke="#000000" stroke-width="2" stroke-linecap="round"></line>
+        <line x1="98.425" y1="106.17" x2="92.3549805" y2="104" id="Path-4-Copy" stroke="#000000" stroke-width="2" stroke-linecap="round"></line>
+    </g>
+</svg>

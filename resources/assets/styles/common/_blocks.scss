@@ -1,0 +1,280 @@
+/* BLOCK: COLUMNS */
+
+.wp-block-columns.alignwide + .wp-block-columns.alignwide,
+.wp-block-columns.alignfull + .wp-block-columns.alignfull {
+  margin-top: -4.8rem;
+}
+
+/* BLOCK: GALLERY */
+
+figure.wp-block-gallery.alignwide,
+figure.wp-block-gallery.alignfull {
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+/* BLOCK: GROUP */
+//dit is om de footer aan te laten sluiten op de onderkant. Mogelijk is het ook handig als een blok een achtergondkleur heeft, om het dan direct te laten aansluiten op het volgende blok?
+
+.entry-content > .wp-block-group.alignwide.has-background,
+.entry-content > .wp-block-group.alignfull.has-background {
+  padding: 8rem 4rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* BLOCK: IMAGE */
+
+.wp-block-image .alignleft {
+  margin-right: 0;
+}
+
+.wp-block-image .alignright {
+  margin-left: 0;
+}
+
+/* BLOCK: SEPARATOR */
+
+hr.wp-block-separator {
+  margin: 8rem auto;
+}
+
+.wp-block-indrukwekkend-werken-bij {
+  &__media {
+    img {
+      display: none;
+    }
+  }
+}
+
+.wp-block-indrukwekkend-single-product-adviseur .image_blok figure img,
+.wp-block-indrukwekkend-single-project-adviseur .image_blok figure img {
+  display: none;
+}
+
+// blok op maat voor de warmtepomp pagina, gekopieerd van de vacatures:not()
+.banner-warmtepomp {
+  padding: 20px;
+  padding-right: 30px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    background-image: url("../images/bult.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 124%;
+    height: 100%;
+    top: 0;
+    left: -116px;
+    z-index: -1;
+    //transform: rotate(30deg);
+  }
+
+  &::after {
+    background: $dark-grey;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+  h3 {
+    color: #fff;
+    text-align: center;
+  }
+
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+
+    .punten {
+      grid-column: 1 / span 2;
+    }
+
+    .wp-block-button {
+      text-align: center;
+    }
+
+    .premie {
+      text-align: right;
+      color: #fff;
+      font-weight: bold;
+
+      .bedrag {
+        font-family: magistral, Arial, Helvetica, sans-serif;
+        display: block;
+        font-size: 40px;
+        line-height: 1em;
+        font-weight: bold;
+      }
+
+      a.voorwaarden {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* stylelint-disable no-descending-specificity */
+.warmtepomp-rij {
+  margin-bottom: 3rem;
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    figure {
+      display: flex;
+
+      img {
+        width: 20%;
+        max-width: 40px;
+      }
+
+      p {
+        align-self: center;
+        margin-left: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: $brand-secondary;
+        max-width: 80%;
+      }
+    }
+  }
+
+  &.optimalisatie {
+    figure {
+      p {
+        font-weight: normal;
+
+        .title {
+          font-weight: bold;
+          font-family: $header-font;
+          display: inline;
+
+          &::after {
+            content: ": ";
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-warmtepomp {
+    .content-container {
+      grid-template-columns: repeat(2, 1fr);
+
+      .punten {
+        grid-column: 1 / span 2;
+      }
+
+      .wp-block-button {
+        align-self: start;
+        justify-self: start;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner-warmtepomp {
+    .content-container {
+      grid-template-columns: 1fr;
+
+      .punten {
+        grid-column: 1;
+      }
+
+      .wp-block-button {
+        align-self: center;
+        justify-self: center;
+      }
+
+      .premie {
+        text-align: center;
+        justify-self: center;
+        grid-row: 2;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .warmtepomp-rij {
+    .icons {
+      justify-content: space-between;
+      align-items: center;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-auto-rows: 1fr;
+
+      figure {
+        background: linear-gradient(40deg, #f5b304 0%, #ff7900 99.91%);
+        border-bottom: 8px solid #fff;
+        transition-duration: 500ms;
+        transition-property: all;
+        margin: 0;
+        height: 100%;
+        padding: 5px;
+        flex-direction: column;
+
+        img {
+          width: 100%;
+          max-width: 100%;
+          margin: 0 auto;
+          padding: 0 40px;
+        }
+
+        p {
+          margin: 0;
+          margin-bottom: 1rem;
+          color: #fff;
+          text-align: center;
+          font-weight: bold;
+          font-size: 0.8em;
+          max-width: 100%;
+
+          .title {
+            font-weight: bold;
+            display: block;
+
+            &::after {
+              content: "";
+            }
+          }
+        }
+      }
+    }
+
+    &.optimalisatie {
+      figure {
+        background: none;
+        padding: 20px;
+
+        img {
+          margin: 0;
+          padding: 0 40px 0 0;
+        }
+
+        p {
+          color: $base-color;
+          font-weight: normal;
+          align-self: start;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

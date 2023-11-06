@@ -1,0 +1,106 @@
+@import url("https://use.typekit.net/dlj4hhh.css");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300;600&display=swap");
+
+/** Box Model  */
+$spacer:                2rem;
+
+$green: #81d715;
+$red: #d50032;
+$blue: #005c9e;
+$oranje: #ff7900;
+$light-blue: #dbe6ef;
+$black1: #535353;
+$dark-grey: #404853;
+$grijs: #696969;
+$licht-grijs: #f1efed;
+$wit: #fff;
+
+/** Colors */
+$brand-primary:  $oranje;
+$brand-secondary: $dark-grey;
+$base-color: $dark-grey;
+
+// Gutenberg kleur opties
+// -- zie editor-color-palette in app/colorscheme.php
+$colors: (
+  "achtergrond-blauw": $light-blue,
+  "donker-grijs": $dark-grey,
+  "oranje": $oranje,
+  "licht-grijs": $licht-grijs,
+  "blauw" 		: $blue,
+  "grijs" 	: $grijs,
+  "rood" 		: $red,
+  "zwart" : $black1,
+  "wit" : $wit,
+);
+
+@each $name, $color in $colors {
+  .has-#{$name}-color {
+    color: $color;
+  }
+
+  .has-#{$name}-background-color {
+    background-color: $color;
+  }
+}
+
+// Gutenberg font opties
+// -- zie editor-color-palette in app/colorscheme.php
+$fontsizes: (
+  "small":    13px,
+  "normal":   21px,
+  "medium":   26px,
+  "large":    31px,
+  "larger":   36px,
+  "huge":     42px,
+);
+
+@each $name, $fontsize in $fontsizes {
+  .has-#{$name}-font-size {
+    font-size: $fontsize;
+  }
+}
+
+//font instellingen
+$primary-font: "Mukta Vaani", Arial, Helvetica, sans-serif;
+$header-font: magistral, Arial, Helvetica, sans-serif;
+$base-font-weight: 300;
+$base-line-height: 1.605;
+$base-letter-spacing: -0.015em;
+
+//fonts schaal methode
+$enable-rfs: true;
+$rfs-base-value: 2.1rem;
+
+//font sizes
+$base-font-size: 2.1rem;
+$h1-font-size: $base-font-size*2.6;
+$h2-font-size: $base-font-size*1.7;
+$h3-font-size: $base-font-size*1.2;
+$h4-font-size: $base-font-size*1.1;
+$h5-font-size: $base-font-size*1;
+
+//button font size?
+
+//fontsizes in de editor zijn anders ingesteld door WP:
+$editor-font-size: 1;
+$base-font-size-editor: $base-font-size*$editor-font-size;
+$h1-font-size-editor: $h1-font-size*$editor-font-size;
+$h2-font-size-editor: $h2-font-size*$editor-font-size;
+$h3-font-size-editor: $h3-font-size*$editor-font-size;
+$h4-font-size-editor: $h4-font-size*$editor-font-size;
+$h5-font-size-editor: $h5-font-size*$editor-font-size;
+
+//font colors
+$h1-font-color: $brand-primary;
+$h2-font-color: $brand-secondary;
+$h3-font-color: $brand-secondary;
+$h4-font-color: $brand-secondary;
+$h5-font-color: $black1;
+
+//font weights
+$h1-font-weight:900;
+$h2-font-weight:700;
+$h3-font-weight:700;
+$h4-font-weight:700;
+$h5-font-weight:700;
