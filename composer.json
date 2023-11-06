@@ -1,8 +1,8 @@
 {
-  "name": "roots/sage",
+  "name": "indrukwekkend/kti-thema",
   "type": "wordpress-theme",
   "license": "MIT",
-  "description": "WordPress starter theme with a modern development workflow",
+  "description": "WordPress thema voor KTI",
   "homepage": "https://roots.io/sage/",
   "authors": [
     {
@@ -19,6 +19,11 @@
       "name": "QWp6t",
       "email": "hi@qwp6t.me",
       "homepage": "https://github.com/qwp6t"
+    },
+    {
+      "name": "Tang Rufus",
+      "email": "hans-peter@indrukwekkend.nl",
+      "homepage": "https://github.com/hphioolen"
     }
   ],
   "keywords": ["wordpress"],
