@@ -77,7 +77,7 @@ $foot_nav3 = array(
       @endif
     </div>
 
-    <?php gravity_form( $formId, false, false, false, '', true ); ?>
+    <?php // gravity_form( $formId, false, false, false, '', true ); ?>
 
     </div>
   </footer> -->
