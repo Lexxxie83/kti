@@ -54,8 +54,8 @@ $foot_nav3 = array(
   }
 ?>
   <!-- Footer formulier -->
-  <footer id="offerte" class="footer-offerte">
-  <!-- <button id="Trigger" class="btn btn-toggle" href="#"><?=$titel?></button> -->
+  <!-- <footer id="offerte" class="footer-offerte">
+
   <h3 class="h2"><?=$titel?></h3>
     
      <figure class="open-pijltje">
@@ -80,7 +80,7 @@ $foot_nav3 = array(
     <?php gravity_form( $formId, false, false, false, '', true ); ?>
 
     </div>
-  </footer>
+  </footer> -->
 
 @endif
 <!-- Footer banner -->

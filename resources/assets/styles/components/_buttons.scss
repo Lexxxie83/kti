@@ -62,34 +62,16 @@
     font-size: 18px;
 
     &::before {
-      content: "";
-      position: absolute;
-      left: 100%;
-      width: 0;
-      top: -2px;
-      height: 0;
-      border-top: 23px solid transparent;
-      border-left: 25px solid $brand-primary;
-      border-bottom: 21px solid transparent;
+      content: none;
     }
 
     &::after {
-      content: "";
-      background-image: none;
-      position: absolute;
-      left: 100%;
-      width: 0;
-      top: 0;
-      height: 0;
-      border-top: 20px solid transparent;
-      border-left: 22px solid #fff;
-      border-bottom: 19px solid transparent;
-      background-color: transparent;
-      background-repeat: no-repeat;
+      content: none;
     }
 
     &:hover {
-      padding-right: 22px;
+      background: $brand-primary;
+      color: #fff !important;
     }
   }
 }

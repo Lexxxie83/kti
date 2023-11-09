@@ -6,6 +6,24 @@
     margin-top: 0;
   }
 
+  &.video {
+    img.mobile {
+      display: none;
+    }
+
+    .afbeelding-container {
+      height: 0;
+      max-height: 650px;
+      min-height: 0;
+      z-index: 2;
+
+      @media only screen and (max-width: 600px) {
+        height: inherit;
+        margin-top: -50px;
+      }
+    }
+  }
+
   .link-balk__content ul li {
     a {
       margin-left: 10px;

@@ -87,13 +87,12 @@ header.site-header {
 
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
     grid-template-areas: "brand menutop menuphone";
     //"brand mainmenu";
 
     .brand {
       width: auto;
-      height: 50px;
       margin: 7px 0 7px 15px;
       background-image: url("../images/logo.png");
       background-repeat: no-repeat;

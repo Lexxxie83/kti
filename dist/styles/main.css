@@ -2783,6 +2783,37 @@ figcaption a,
   margin-top: 0.8em;
 }
 
+@media only screen and (max-width: 500px) {
+  /* line 211, resources/assets/styles/common/_global.scss */
+
+  .xs-show {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 37vh;
+  }
+
+  /* line 218, resources/assets/styles/common/_global.scss */
+
+  .xs-hidden {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  /* line 224, resources/assets/styles/common/_global.scss */
+
+  .xs-show {
+    display: none;
+  }
+
+  /* line 228, resources/assets/styles/common/_global.scss */
+
+  .xs-hidden {
+    display: block;
+  }
+}
+
 /* line 1, resources/assets/styles/common/_align.scss */
 
 .entry-content > * {
@@ -3564,18 +3595,10 @@ hr.wp-block-separator {
     .gform_next_button::before,
 .is-style-outline
     .button.gform_button::before {
-  content: "";
-  position: absolute;
-  left: 100%;
-  width: 0;
-  top: -2px;
-  height: 0;
-  border-top: 23px solid transparent;
-  border-left: 25px solid #ff7900;
-  border-bottom: 21px solid transparent;
+  content: none;
 }
 
-/* line 76, resources/assets/styles/components/_buttons.scss */
+/* line 68, resources/assets/styles/components/_buttons.scss */
 
 .is-style-outline .wp-block-button__link::after,
 .is-style-outline
@@ -3596,21 +3619,10 @@ hr.wp-block-separator {
     .gform_next_button::after,
 .is-style-outline
     .button.gform_button::after {
-  content: "";
-  background-image: none;
-  position: absolute;
-  left: 100%;
-  width: 0;
-  top: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-left: 22px solid #fff;
-  border-bottom: 19px solid transparent;
-  background-color: transparent;
-  background-repeat: no-repeat;
+  content: none;
 }
 
-/* line 91, resources/assets/styles/components/_buttons.scss */
+/* line 72, resources/assets/styles/components/_buttons.scss */
 
 .is-style-outline .wp-block-button__link:hover,
 .is-style-outline
@@ -3631,17 +3643,18 @@ hr.wp-block-separator {
     .gform_next_button:hover,
 .is-style-outline
     .button.gform_button:hover {
-  padding-right: 22px;
+  background: #ff7900;
+  color: #fff !important;
 }
 
-/* line 97, resources/assets/styles/components/_buttons.scss */
+/* line 79, resources/assets/styles/components/_buttons.scss */
 
 .wp-block-file .wp-block-file__button {
   margin-left: 15px;
   font-size: 19px;
 }
 
-/* line 126, resources/assets/styles/components/_buttons.scss */
+/* line 108, resources/assets/styles/components/_buttons.scss */
 
 button.search-header-icon {
   background: none;
@@ -3650,7 +3663,7 @@ button.search-header-icon {
   padding: 0 25px 0 0;
 }
 
-/* line 132, resources/assets/styles/components/_buttons.scss */
+/* line 114, resources/assets/styles/components/_buttons.scss */
 
 button.search-header-icon:active {
   color: #005c9e;
@@ -4527,7 +4540,7 @@ header.site-header {
 
 header.site-header .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
   grid-template-areas: "brand menutop menuphone";
 }
 
@@ -4535,7 +4548,6 @@ header.site-header .container {
 
 header.site-header .container .brand {
   width: auto;
-  height: 50px;
   margin: 7px 0 7px 15px;
   background-image: url(/app/themes/kti/dist/images/logo.png);
   background-repeat: no-repeat;
@@ -4550,19 +4562,19 @@ header.site-header .container .brand {
   transition: all 0.5s ease-in-out;
 }
 
-/* line 107, resources/assets/styles/layouts/_header.scss */
+/* line 106, resources/assets/styles/layouts/_header.scss */
 
 header.site-header .container .brand.small {
   height: 50px;
 }
 
-/* line 111, resources/assets/styles/layouts/_header.scss */
+/* line 110, resources/assets/styles/layouts/_header.scss */
 
 .template-custom header.site-header .container .brand {
   height: 50px;
 }
 
-/* line 116, resources/assets/styles/layouts/_header.scss */
+/* line 115, resources/assets/styles/layouts/_header.scss */
 
 header.site-header .container .nav-top {
   display: -webkit-box;
@@ -4583,13 +4595,13 @@ header.site-header .container .nav-top {
   margin-top: 25px;
 }
 
-/* line 127, resources/assets/styles/layouts/_header.scss */
+/* line 126, resources/assets/styles/layouts/_header.scss */
 
 header.site-header .container .nav-top button.search-header-icon {
   display: none;
 }
 
-/* line 131, resources/assets/styles/layouts/_header.scss */
+/* line 130, resources/assets/styles/layouts/_header.scss */
 
 header.site-header .container .nav-top ul {
   display: -webkit-box;
@@ -4604,7 +4616,7 @@ header.site-header .container .nav-top ul {
   margin-bottom: 30px;
 }
 
-/* line 140, resources/assets/styles/layouts/_header.scss */
+/* line 139, resources/assets/styles/layouts/_header.scss */
 
 header.site-header .container .nav-top ul li a {
   color: #404853;
@@ -4616,20 +4628,20 @@ header.site-header .container .nav-top ul li a {
   padding: 0 5px;
 }
 
-/* line 149, resources/assets/styles/layouts/_header.scss */
+/* line 148, resources/assets/styles/layouts/_header.scss */
 
 header.site-header .container .nav-top ul li a:hover {
   border-bottom: 1px solid #363636;
   color: #363636;
 }
 
-/* line 159, resources/assets/styles/layouts/_header.scss */
+/* line 158, resources/assets/styles/layouts/_header.scss */
 
 header.site-header .container .nav-primary ul#menu-main {
   display: none;
 }
 
-/* line 164, resources/assets/styles/layouts/_header.scss */
+/* line 163, resources/assets/styles/layouts/_header.scss */
 
 header.site-header .container .hamburger {
   display: block;
@@ -4639,7 +4651,7 @@ header.site-header .container .hamburger {
   margin-right: -20px;
 }
 
-/* line 174, resources/assets/styles/layouts/_header.scss */
+/* line 173, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-container {
   display: block;
@@ -4661,7 +4673,7 @@ header.site-header .container .hamburger {
   transition: all ease-in-out 0.45s;
 }
 
-/* line 189, resources/assets/styles/layouts/_header.scss */
+/* line 188, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-container.closed {
   -webkit-transition: none;
@@ -4669,7 +4681,7 @@ header.site-header .container .hamburger {
   transition: none;
 }
 
-/* line 193, resources/assets/styles/layouts/_header.scss */
+/* line 192, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-container.open {
   -webkit-transform: translateX(0);
@@ -4678,7 +4690,7 @@ header.site-header .container .hamburger {
   width: 100vw;
 }
 
-/* line 198, resources/assets/styles/layouts/_header.scss */
+/* line 197, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-container .menu-top-menu-container {
   width: calc(100% - 4rem);
@@ -4688,7 +4700,7 @@ header.site-header .container .hamburger {
   margin-top: 10px;
 }
 
-/* line 205, resources/assets/styles/layouts/_header.scss */
+/* line 204, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-container .menu-top-menu-container ul {
   list-style-type: none;
@@ -4696,7 +4708,7 @@ header.site-header .container .hamburger {
   padding: 0;
 }
 
-/* line 211, resources/assets/styles/layouts/_header.scss */
+/* line 210, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-container .menu-top-menu-container ul li a {
   color: #404853;
@@ -4707,19 +4719,19 @@ header.site-header .container .hamburger {
   font-weight: bold;
 }
 
-/* line 219, resources/assets/styles/layouts/_header.scss */
+/* line 218, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-container .menu-top-menu-container ul li a .mobile-hidden {
   display: inline-block;
 }
 
-/* line 223, resources/assets/styles/layouts/_header.scss */
+/* line 222, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-container .menu-top-menu-container ul li a:hover {
   color: #ff7900;
 }
 
-/* line 232, resources/assets/styles/layouts/_header.scss */
+/* line 231, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-overlay {
   display: block;
@@ -4742,7 +4754,7 @@ header.site-header .container .hamburger {
   transition: all ease-in-out 0.15s;
 }
 
-/* line 246, resources/assets/styles/layouts/_header.scss */
+/* line 245, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-overlay.closed {
   -webkit-transition: none;
@@ -4750,7 +4762,7 @@ header.site-header .container .hamburger {
   transition: none;
 }
 
-/* line 250, resources/assets/styles/layouts/_header.scss */
+/* line 249, resources/assets/styles/layouts/_header.scss */
 
 .mobile-navigation-overlay.open {
   -webkit-transform: translateX(0);
@@ -4761,14 +4773,14 @@ header.site-header .container .hamburger {
           transform: translateY(0);
 }
 
-/* line 257, resources/assets/styles/layouts/_header.scss */
+/* line 256, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile .search {
   padding: 10px 20px;
   margin-top: 30px;
 }
 
-/* line 261, resources/assets/styles/layouts/_header.scss */
+/* line 260, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile .search .search-form {
   display: -webkit-box;
@@ -4779,14 +4791,14 @@ header.site-header .container .hamburger {
           align-items: center;
 }
 
-/* line 265, resources/assets/styles/layouts/_header.scss */
+/* line 264, resources/assets/styles/layouts/_header.scss */
 
 .nav-mobile .search .search-form .widget {
   width: 100%;
   margin-left: 10px;
 }
 
-/* line 273, resources/assets/styles/layouts/_header.scss */
+/* line 272, resources/assets/styles/layouts/_header.scss */
 
 .klantenbeoordeling {
   background: #404853;
@@ -4796,7 +4808,7 @@ header.site-header .container .hamburger {
   padding: 20px;
 }
 
-/* line 280, resources/assets/styles/layouts/_header.scss */
+/* line 279, resources/assets/styles/layouts/_header.scss */
 
 .klantenbeoordeling .wp-block-group__inner-container {
   display: -webkit-inline-box;
@@ -4808,7 +4820,7 @@ header.site-header .container .hamburger {
   justify-items: center;
 }
 
-/* line 285, resources/assets/styles/layouts/_header.scss */
+/* line 284, resources/assets/styles/layouts/_header.scss */
 
 .klantenbeoordeling .wp-block-group__inner-container p {
   font-size: 2.7rem;
@@ -4817,14 +4829,14 @@ header.site-header .container .hamburger {
   margin-bottom: 0;
 }
 
-/* line 291, resources/assets/styles/layouts/_header.scss */
+/* line 290, resources/assets/styles/layouts/_header.scss */
 
 .klantenbeoordeling .wp-block-group__inner-container p .desktop-hidden {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 296, resources/assets/styles/layouts/_header.scss */
+/* line 295, resources/assets/styles/layouts/_header.scss */
 
 .klantenbeoordeling .wp-block-group__inner-container p span {
   font-weight: bold;
@@ -4833,13 +4845,13 @@ header.site-header .container .hamburger {
 }
 
 @media only screen and (min-width: 1024px) {
-  /* line 306, resources/assets/styles/layouts/_header.scss */
+  /* line 305, resources/assets/styles/layouts/_header.scss */
 
   .mobile-hidden {
     display: inline-block;
   }
 
-  /* line 310, resources/assets/styles/layouts/_header.scss */
+  /* line 309, resources/assets/styles/layouts/_header.scss */
 
   .klantenbeoordeling {
     border: 10px solid #ff7900;
@@ -4856,7 +4868,7 @@ header.site-header .container .hamburger {
     text-align: center;
   }
 
-  /* line 324, resources/assets/styles/layouts/_header.scss */
+  /* line 323, resources/assets/styles/layouts/_header.scss */
 
   .klantenbeoordeling .wp-block-group__inner-container {
     display: -webkit-inline-box;
@@ -4868,7 +4880,7 @@ header.site-header .container .hamburger {
     justify-items: center;
   }
 
-  /* line 329, resources/assets/styles/layouts/_header.scss */
+  /* line 328, resources/assets/styles/layouts/_header.scss */
 
   .klantenbeoordeling .wp-block-group__inner-container p {
     font-size: 2.7rem;
@@ -4876,7 +4888,7 @@ header.site-header .container .hamburger {
     margin-top: 30px;
   }
 
-  /* line 334, resources/assets/styles/layouts/_header.scss */
+  /* line 333, resources/assets/styles/layouts/_header.scss */
 
   .klantenbeoordeling .wp-block-group__inner-container p span {
     font-size: 6.7rem;
@@ -4885,13 +4897,13 @@ header.site-header .container .hamburger {
     display: inline-block;
   }
 
-  /* line 344, resources/assets/styles/layouts/_header.scss */
+  /* line 343, resources/assets/styles/layouts/_header.scss */
 
   .desktop-hidden {
     display: none;
   }
 
-  /* line 350, resources/assets/styles/layouts/_header.scss */
+  /* line 349, resources/assets/styles/layouts/_header.scss */
 
   header.site-header .container .brand {
     width: auto;
@@ -4899,7 +4911,7 @@ header.site-header .container .hamburger {
     margin: 15px 0 15px 0;
   }
 
-  /* line 356, resources/assets/styles/layouts/_header.scss */
+  /* line 355, resources/assets/styles/layouts/_header.scss */
 
   header.site-header .container .nav-top {
     display: -webkit-box;
@@ -4920,7 +4932,7 @@ header.site-header .container .hamburger {
     margin-top: 25px;
   }
 
-  /* line 367, resources/assets/styles/layouts/_header.scss */
+  /* line 366, resources/assets/styles/layouts/_header.scss */
 
   header.site-header .container .nav-top.hide {
     max-height: 0;
@@ -4928,14 +4940,14 @@ header.site-header .container .hamburger {
             transform: rotateX(90deg);
   }
 
-  /* line 372, resources/assets/styles/layouts/_header.scss */
+  /* line 371, resources/assets/styles/layouts/_header.scss */
 
   header.site-header .container .nav-top button.search-header-icon {
     display: block;
     cursor: pointer;
   }
 
-  /* line 377, resources/assets/styles/layouts/_header.scss */
+  /* line 376, resources/assets/styles/layouts/_header.scss */
 
   header.site-header .container .nav-top ul {
     display: -webkit-box;
@@ -4952,7 +4964,7 @@ header.site-header .container .hamburger {
     margin-bottom: 30px;
   }
 
-  /* line 388, resources/assets/styles/layouts/_header.scss */
+  /* line 387, resources/assets/styles/layouts/_header.scss */
 
   header.site-header .container .nav-top ul li a {
     color: #404853;
@@ -4964,32 +4976,32 @@ header.site-header .container .hamburger {
     padding: 0 5px;
   }
 
-  /* line 397, resources/assets/styles/layouts/_header.scss */
+  /* line 396, resources/assets/styles/layouts/_header.scss */
 
   header.site-header .container .nav-top ul li a:hover {
     border-bottom: 1px solid #363636;
     color: #363636;
   }
 
-  /* line 409, resources/assets/styles/layouts/_header.scss */
+  /* line 408, resources/assets/styles/layouts/_header.scss */
 
   .nav-mobile .search {
     padding-top: 100px;
   }
 
-  /* line 414, resources/assets/styles/layouts/_header.scss */
+  /* line 413, resources/assets/styles/layouts/_header.scss */
 
   #site-content {
     padding-top: 130px;
   }
 
-  /* line 421, resources/assets/styles/layouts/_header.scss */
+  /* line 420, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container {
     grid-template-areas: "brand menuphone menuphone" "brand mainmenu mainmenu";
   }
 
-  /* line 427, resources/assets/styles/layouts/_header.scss */
+  /* line 426, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-top {
     display: -webkit-box;
@@ -5001,25 +5013,25 @@ header.site-header .container .hamburger {
         align-self: center;
   }
 
-  /* line 433, resources/assets/styles/layouts/_header.scss */
+  /* line 432, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-top ul {
     margin-bottom: 0;
   }
 
-  /* line 435, resources/assets/styles/layouts/_header.scss */
+  /* line 434, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-top.mobile-hidden {
     display: none;
   }
 
-  /* line 440, resources/assets/styles/layouts/_header.scss */
+  /* line 439, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .hamburger {
     display: none;
   }
 
-  /* line 444, resources/assets/styles/layouts/_header.scss */
+  /* line 443, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary {
     grid-area: mainmenu;
@@ -5032,13 +5044,13 @@ header.site-header .container .hamburger {
     margin-bottom: 10px;
   }
 
-  /* line 451, resources/assets/styles/layouts/_header.scss */
+  /* line 450, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul#menu-main {
     display: block;
   }
 
-  /* line 455, resources/assets/styles/layouts/_header.scss */
+  /* line 454, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary li {
     display: block;
@@ -5049,19 +5061,19 @@ header.site-header .container .hamburger {
     position: relative;
   }
 
-  /* line 461, resources/assets/styles/layouts/_header.scss */
+  /* line 460, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary li.mobile-hidden {
     display: none;
   }
 
-  /* line 466, resources/assets/styles/layouts/_header.scss */
+  /* line 465, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav {
     margin: 0;
   }
 
-  /* line 469, resources/assets/styles/layouts/_header.scss */
+  /* line 468, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav > li {
     padding: 10px 22px 15px;
@@ -5070,7 +5082,7 @@ header.site-header .container .hamburger {
     font-weight: bold;
   }
 
-  /* line 475, resources/assets/styles/layouts/_header.scss */
+  /* line 474, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav > li > a {
     padding: 10px 5px;
@@ -5078,7 +5090,7 @@ header.site-header .container .hamburger {
     text-decoration: none;
   }
 
-  /* line 481, resources/assets/styles/layouts/_header.scss */
+  /* line 480, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav > li:hover,
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav > li.current-menu-item,
@@ -5086,7 +5098,7 @@ header.site-header .container .hamburger {
     color: #ff7900;
   }
 
-  /* line 486, resources/assets/styles/layouts/_header.scss */
+  /* line 485, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav > li:hover > a,
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav > li.current-menu-item > a,
@@ -5094,7 +5106,7 @@ header.site-header .container .hamburger {
     color: #ff7900;
   }
 
-  /* line 492, resources/assets/styles/layouts/_header.scss */
+  /* line 491, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav li ul {
     visibility: hidden;
@@ -5115,7 +5127,7 @@ header.site-header .container .hamburger {
     border-top: 3px solid #ff7900;
   }
 
-  /* line 507, resources/assets/styles/layouts/_header.scss */
+  /* line 506, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav li ul li {
     color: #fff;
@@ -5128,13 +5140,13 @@ header.site-header .container .hamburger {
     width: max-content;
   }
 
-  /* line 516, resources/assets/styles/layouts/_header.scss */
+  /* line 515, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav li ul li.current-menu-item a {
     text-decoration: underline;
   }
 
-  /* line 521, resources/assets/styles/layouts/_header.scss */
+  /* line 520, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav li ul li a {
     color: #404853;
@@ -5146,13 +5158,13 @@ header.site-header .container .hamburger {
     transition: all 0.2s;
   }
 
-  /* line 528, resources/assets/styles/layouts/_header.scss */
+  /* line 527, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav li ul li a:hover {
     margin-left: 4px;
   }
 
-  /* line 535, resources/assets/styles/layouts/_header.scss */
+  /* line 534, resources/assets/styles/layouts/_header.scss */
 
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav li:hover > ul,
   body:not(.hierkanhomealsdatnodig) header.site-header .container .nav-primary ul.nav li ul:hover {
@@ -5163,13 +5175,13 @@ header.site-header .container .hamburger {
 }
 
 @media only screen and (max-width: 528px) {
-  /* line 563, resources/assets/styles/layouts/_header.scss */
+  /* line 562, resources/assets/styles/layouts/_header.scss */
 
   header.site-header .container .brand {
     margin: 7px 0 7px 0;
   }
 
-  /* line 570, resources/assets/styles/layouts/_header.scss */
+  /* line 569, resources/assets/styles/layouts/_header.scss */
 
   .mobile-navigation-container.open {
     -webkit-transform: translateX(0);
@@ -5179,7 +5191,7 @@ header.site-header .container .hamburger {
   }
 }
 
-/* line 577, resources/assets/styles/layouts/_header.scss */
+/* line 576, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu,
 #cssmenu ul,
@@ -5196,7 +5208,7 @@ header.site-header .container .hamburger {
   box-sizing: border-box;
 }
 
-/* line 593, resources/assets/styles/layouts/_header.scss */
+/* line 592, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu {
   width: calc(100% - 4rem);
@@ -5205,19 +5217,19 @@ header.site-header .container .hamburger {
   margin: 0 auto;
 }
 
-/* line 600, resources/assets/styles/layouts/_header.scss */
+/* line 599, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu ul ul {
   display: block;
 }
 
-/* line 604, resources/assets/styles/layouts/_header.scss */
+/* line 603, resources/assets/styles/layouts/_header.scss */
 
 .align-right {
   float: right;
 }
 
-/* line 609, resources/assets/styles/layouts/_header.scss */
+/* line 608, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu > ul > li > a {
   padding: 15px 20px;
@@ -5239,7 +5251,7 @@ header.site-header .container .hamburger {
           justify-content: space-between;
 }
 
-/* line 624, resources/assets/styles/layouts/_header.scss */
+/* line 623, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu > ul > li > a:hover,
 #cssmenu > ul > li.active > a,
@@ -5247,7 +5259,7 @@ header.site-header .container .hamburger {
   color: #ff7900;
 }
 
-/* line 690, resources/assets/styles/layouts/_header.scss */
+/* line 689, resources/assets/styles/layouts/_header.scss */
 
 .holder {
   -webkit-box-sizing: border-box;
@@ -5266,7 +5278,7 @@ header.site-header .container .hamburger {
   position: relative;
 }
 
-/* line 648, resources/assets/styles/layouts/_header.scss */
+/* line 647, resources/assets/styles/layouts/_header.scss */
 
 .holder::before {
   content: "";
@@ -5286,7 +5298,7 @@ header.site-header .container .hamburger {
   transition: width 0.3s;
 }
 
-/* line 662, resources/assets/styles/layouts/_header.scss */
+/* line 661, resources/assets/styles/layouts/_header.scss */
 
 .holder::after {
   content: "";
@@ -5300,7 +5312,7 @@ header.site-header .container .hamburger {
   bottom: 10px;
 }
 
-/* line 674, resources/assets/styles/layouts/_header.scss */
+/* line 673, resources/assets/styles/layouts/_header.scss */
 
 li.open .holder {
   -webkit-transform: rotate(0deg);
@@ -5308,7 +5320,7 @@ li.open .holder {
           transform: rotate(0deg);
 }
 
-/* line 677, resources/assets/styles/layouts/_header.scss */
+/* line 676, resources/assets/styles/layouts/_header.scss */
 
 li.open .holder::before {
   content: "";
@@ -5323,7 +5335,7 @@ li.open .holder::before {
           transform: rotate(90deg);
 }
 
-/* line 694, resources/assets/styles/layouts/_header.scss */
+/* line 693, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu > ul > li > a:hover > span::after,
 #cssmenu > ul > li.active > a > span::after,
@@ -5331,7 +5343,7 @@ li.open .holder::before {
   border-color: #404853;
 }
 
-/* line 700, resources/assets/styles/layouts/_header.scss */
+/* line 699, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu ul ul li a {
   cursor: pointer;
@@ -5343,7 +5355,7 @@ li.open .holder::before {
   background: transparent;
 }
 
-/* line 710, resources/assets/styles/layouts/_header.scss */
+/* line 709, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li.open > a,
@@ -5351,40 +5363,40 @@ li.open .holder::before {
   color: #ff7900;
 }
 
-/* line 717, resources/assets/styles/layouts/_header.scss */
+/* line 716, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu ul ul li:first-child > a {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-/* line 721, resources/assets/styles/layouts/_header.scss */
+/* line 720, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu ul ul ul li:first-child > a {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-/* line 725, resources/assets/styles/layouts/_header.scss */
+/* line 724, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu ul ul ul li a {
   padding-left: 30px;
 }
 
-/* line 729, resources/assets/styles/layouts/_header.scss */
+/* line 728, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu > ul > li > ul > li:last-child > a,
 #cssmenu > ul > li > ul > li.last > a {
   margin-bottom: 20px;
 }
 
-/* line 740, resources/assets/styles/layouts/_header.scss */
+/* line 739, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu > ul > li > ul > li.open:last-child > ul > li:last-child > a {
   border-bottom: 0;
 }
 
-/* line 744, resources/assets/styles/layouts/_header.scss */
+/* line 743, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu ul ul li.has-sub > a::after {
   display: block;
@@ -5402,7 +5414,7 @@ li.open .holder::before {
           transform: rotate(-135deg);
 }
 
-/* line 758, resources/assets/styles/layouts/_header.scss */
+/* line 757, resources/assets/styles/layouts/_header.scss */
 
 #cssmenu ul ul li.active > a::after,
 #cssmenu ul ul li.open > a::after,
@@ -6197,12 +6209,39 @@ body#tinymce {
 
 /* line 10, resources/assets/styles/blocks/_header.scss */
 
+.wp-block-indrukwekkend-header-home.video img.mobile,
+.wp-block-indrukwekkend-header-landing.video img.mobile {
+  display: none;
+}
+
+/* line 14, resources/assets/styles/blocks/_header.scss */
+
+.wp-block-indrukwekkend-header-home.video .afbeelding-container,
+.wp-block-indrukwekkend-header-landing.video .afbeelding-container {
+  height: 0;
+  max-height: 650px;
+  min-height: 0;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 14, resources/assets/styles/blocks/_header.scss */
+
+  .wp-block-indrukwekkend-header-home.video .afbeelding-container,
+  .wp-block-indrukwekkend-header-landing.video .afbeelding-container {
+    height: inherit;
+    margin-top: -50px;
+  }
+}
+
+/* line 28, resources/assets/styles/blocks/_header.scss */
+
 .wp-block-indrukwekkend-header-home .link-balk__content ul li a,
 .wp-block-indrukwekkend-header-landing .link-balk__content ul li a {
   margin-left: 10px;
 }
 
-/* line 14, resources/assets/styles/blocks/_header.scss */
+/* line 32, resources/assets/styles/blocks/_header.scss */
 
 .wp-block-indrukwekkend-header-home .link-balk__content ul li::before,
 .wp-block-indrukwekkend-header-landing .link-balk__content ul li::before {
