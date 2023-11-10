@@ -103,16 +103,15 @@ $foot_nav3 = array(
       </a>
     </div>
     <div class="col menu-1">
-      <p class="footer_titel"> <?=$footTitle1?> </p>
-      {!! wp_nav_menu($foot_nav) !!}
-    </div>
-    <div class="col menu-2">
     <p class="footer_titel"><?=$footTitle2?></p>
       {!! wp_nav_menu($foot_nav1) !!}
     </div>
-    <div class="col menu-3">
-    <p class="footer_titel"><?=$footTitle3?></p>
+    <div class="col menu-2">
+      <p class="footer_titel"><?=$footTitle3?></p>
       {!! wp_nav_menu($foot_nav2) !!}
+    </div>
+    <div class="col menu-3">
+
     </div>
     <div class="col menu-4">
       <iframe class="mobile-hidden" frameborder="0" allowtransparency="true" src="https://www.klantenvertellen.nl/retrieve-widget.html?button=true&tenantId=99&locationId=1027470" width="400" height="340"></iframe>
