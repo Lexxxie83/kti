@@ -27,13 +27,13 @@ export default {
 
     // Ga naar de offerte
 
-    $('.offerte').on('click', function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: $('#offerte').offset().top - 100,
-        }, 700);
-        $('#offerte-slider').toggleClass('slidedown slideup');
-    });
+    // $('.offerte').on('click', function (e) {
+    //     e.preventDefault();
+    //     $('html,body').animate({
+    //         scrollTop: $('#offerte').offset().top - 100,
+    //     }, 700);
+    //     $('#offerte-slider').toggleClass('slidedown slideup');
+    // });
 
     if ($('.nav-top').length) {
       var menuscrollTrigger = 250, // px
