@@ -35,3 +35,55 @@
     }
   }
 }
+
+.wp-block-cover__inner-container {
+  position: absolute;
+  bottom: 0;
+
+  h1 {
+    max-width: 650px !important;
+    width: calc(100% - 4rem) !important;
+  }
+
+  .wp-block-group {
+    max-width: 650px !important;
+    width: calc(100% - 4rem) !important;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.4em;
+    }
+
+    &.has-rounded-corners {
+      padding: 3rem;
+      background-color: #ffaa25;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+
+      .wp-block-button__link {
+        margin-top: 0;
+        background: $dark-grey;
+        border-color: $dark-grey;
+        border-radius: 4px;
+
+        &::after {
+          background-color: $dark-grey;
+          background-position: 0 5px;
+          border-radius: 0 4px 4px 0;
+        }
+
+        &:hover {
+          background: $dark-grey;
+          border-color: $dark-grey;
+
+          &::after {
+            background-position: 3px 5px;
+          }
+        }
+      }
+    }
+  }
+}

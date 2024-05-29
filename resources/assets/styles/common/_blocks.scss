@@ -1,4 +1,5 @@
 /* BLOCK: COLUMNS */
+/* stylelint-disable no-descending-specificity */
 
 .wp-block-columns.alignwide + .wp-block-columns.alignwide,
 .wp-block-columns.alignfull + .wp-block-columns.alignfull {
@@ -16,11 +17,68 @@ figure.wp-block-gallery.alignfull {
 /* BLOCK: GROUP */
 //dit is om de footer aan te laten sluiten op de onderkant. Mogelijk is het ook handig als een blok een achtergondkleur heeft, om het dan direct te laten aansluiten op het volgende blok?
 
+.entry-content > .wp-block-group.quote {
+  grid-gap: 30px;
+
+  .rating-stars {
+    margin-left: -0.1em;
+    margin-right: -0.1em;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    user-select: none;
+  }
+
+  > .wp-block-group:first-child {
+    margin-bottom: 0;
+
+    p {
+      border-radius: 100%;
+      padding: 0.45em 0.25em;
+      min-width: 2em;
+      height: auto;
+      text-align: center;
+      font-size: 34px;
+      margin-right: 20px;
+    }
+  }
+}
+
 .entry-content > .wp-block-group.alignwide.has-background,
 .entry-content > .wp-block-group.alignfull.has-background {
   padding: 8rem 4rem;
   margin-bottom: 0;
   margin-top: 0;
+
+  &.has-rounded-corners {
+    background-color: #faf8f6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 1100px !important;
+      width: calc(100% - 4rem) !important;
+    }
+
+    .wp-block-columns.producten {
+      margin-top: 1.5rem !important;
+
+      .wp-block-column {
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
 }
 
 /* BLOCK: IMAGE */
@@ -125,7 +183,6 @@ hr.wp-block-separator {
   }
 }
 
-/* stylelint-disable no-descending-specificity */
 .warmtepomp-rij {
   margin-bottom: 3rem;
 
