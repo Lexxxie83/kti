@@ -12,3 +12,21 @@
     padding-right: 20px;
   }
 }
+
+.wp-block-media-text {
+  .wp-block-media-text__media {
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+
+.wp-block-table {
+  table {
+    font-size: 17px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

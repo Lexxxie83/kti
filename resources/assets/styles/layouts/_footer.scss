@@ -190,29 +190,39 @@
 }
 
 //back to top arrow, gekoppeld met JS common
-#back-to-top {
+#abs-contact {
   position: fixed;
+  display: none;
+
+  @media only screen and (min-width: 1024px) {
+    // right: 30px;
+    display: flex;
+  }
+
+  flex-direction: column;
   bottom: 30px;
   right: 30px;
   z-index: 9;
   cursor: pointer;
   transition: opacity 0.2s ease-out;
-  opacity: 0;
-  display: block;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 100px;
+  justify-content: space-between;
+  align-items: self-start;
 
-  .fa-chevron-up {
-    color: $brand-primary;
+  .fa-whatsapp,
+  .fa-clipboard {
+    fill: var(--wp--preset--color--groen);
 
     &:hover {
-      color: $brand-secondary;
+      fill: $brand-primary;
     }
   }
-}
 
-#back-to-top.show {
-  opacity: 1;
+  .fa-clipboard {
+    margin-bottom: 10px;
+    fill: $brand-secondary;
+  }
 }
 
 @media (max-width: 700px) {

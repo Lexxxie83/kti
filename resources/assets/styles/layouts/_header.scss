@@ -161,12 +161,41 @@ header.site-header {
       }
     }
 
-    .hamburger {
-      display: block;
+    .mobile-menu {
+      display: flex;
+      align-items: center;
       grid-area: menutop;
       justify-self: right;
       padding-bottom: 4px;
       margin-right: -20px;
+
+      #mobile-menu-contact {
+        margin-right: 10px;
+
+        a {
+          text-decoration: none;
+
+          svg {
+            // fill: $brand-primary;
+            width: 0.8em;
+            height: 0.8em;
+          }
+        }
+      }
+
+      .fa-whatsapp,
+      .fa-clipboard {
+        fill: var(--wp--preset--color--groen);
+
+        &:hover {
+          fill: $brand-primary;
+        }
+      }
+
+      .fa-clipboard {
+        margin-right: 3px;
+        fill: $brand-secondary;
+      }
     }
   }
 }
@@ -438,7 +467,7 @@ header.site-header {
           }
         }
 
-        .hamburger {
+        .mobile-menu {
           display: none;
         }
         // hoofdmenu Desktop vanaf hier:

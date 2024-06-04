@@ -20,15 +20,6 @@ figure.wp-block-gallery.alignfull {
 .entry-content > .wp-block-group.quote {
   grid-gap: 30px;
 
-  .rating-stars {
-    margin-left: -0.1em;
-    margin-right: -0.1em;
-    display: flex;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    user-select: none;
-  }
-
   > .wp-block-group:first-child {
     margin-bottom: 0;
 
@@ -72,9 +63,22 @@ figure.wp-block-gallery.alignfull {
       .wp-block-column {
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        position: relative;
+        cursor: pointer;
 
         &:hover {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 a {
+          text-decoration: none;
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            inset: 0;
+          }
         }
       }
     }
