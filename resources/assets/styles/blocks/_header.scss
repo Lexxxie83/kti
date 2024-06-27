@@ -48,7 +48,7 @@
 
   .wp-block-group {
     max-width: 650px !important;
-    width: calc(100% - 4rem) !important;
+    // width: calc(100% - 4rem) !important;
 
     h2 {
       margin-bottom: 15px;
@@ -60,7 +60,12 @@
 
     &.has-rounded-corners {
       padding: 3rem;
-      background-color: #ffaa25;
+      background-color: #ffab25e5;
+
+      @media only screen and (min-width: 780px) {
+        background-color: #ffaa25;
+      }
+
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       border-radius: 20px;
 

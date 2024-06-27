@@ -17,24 +17,6 @@ figure.wp-block-gallery.alignfull {
 /* BLOCK: GROUP */
 //dit is om de footer aan te laten sluiten op de onderkant. Mogelijk is het ook handig als een blok een achtergondkleur heeft, om het dan direct te laten aansluiten op het volgende blok?
 
-.entry-content > .wp-block-group.quote {
-  grid-gap: 30px;
-
-  > .wp-block-group:first-child {
-    margin-bottom: 0;
-
-    p {
-      border-radius: 100%;
-      padding: 0.45em 0.25em;
-      min-width: 2em;
-      height: auto;
-      text-align: center;
-      font-size: 34px;
-      margin-right: 20px;
-    }
-  }
-}
-
 .entry-content > .wp-block-group.alignwide.has-background,
 .entry-content > .wp-block-group.alignfull.has-background {
   padding: 8rem 4rem;

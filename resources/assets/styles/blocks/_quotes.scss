@@ -1,0 +1,28 @@
+.entry-content > .wp-block-group.quote {
+  grid-gap: 30px;
+
+  > .wp-block-group:first-child {
+    margin-bottom: 0;
+
+    p {
+      border-radius: 100%;
+      padding: 0.45em 0.25em;
+      min-width: 2em;
+      height: auto;
+      text-align: center;
+      font-size: 34px;
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    grid-gap: 15px;
+
+    > .wp-block-group:first-child {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
